@@ -10,7 +10,7 @@ import ThemeToggle from './components/ui/ThemeToggle';
 import CoolCursor from './components/ui/CoolCursor';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     if (darkMode) {
