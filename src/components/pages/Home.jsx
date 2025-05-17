@@ -40,16 +40,21 @@ const Home = () => {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <img
-            src={pradeepImg}
-            alt="Pradeep Kumar S"
-            className="mx-auto mb-6 w-36 h-36 rounded-full object-cover border-4 border-blue-500 shadow-lg dark:border-blue-400"
-          />
+          <div className="relative mx-auto mb-6 w-56 h-56 md:w-72 md:h-72 flex items-center justify-center">
+            <div className="absolute inset-0 rounded-[2rem] p-[3px] bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 z-0"></div>
+            <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300 group">
+              <img
+                src={pradeepImg}
+                alt="Pradeep Kumar S"
+                className="w-full h-full object-cover rounded-[2rem] group-hover:brightness-105 transition-all duration-300"
+              />
+            </div>
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
             Hi, I'm Pradeep Kumar S
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-            AI & Data Science Student | Full Stack Developer | Tech Enthusiast
+            AI & Data Science Student | Machine Learning Enthusiast
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
