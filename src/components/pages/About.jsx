@@ -1,4 +1,9 @@
 import bitHackWinImg from '../../assets/bit-hack-win.jpeg';
+import EducationSection from '../about/EducationSection';
+import SkillsSection from '../about/SkillsSection';
+import AchievementsSection from '../about/AchievementsSection';
+import LeadershipSection from '../about/LeadershipSection';
+import PublicationsSection from '../about/PublicationsSection';
 
 const About = () => {
   const education = [
@@ -28,7 +33,7 @@ const About = () => {
     tools: ['Android Studio', 'MySQL', 'Power BI', 'Colab', 'Windows', 'Ubuntu'],
   };
 
-  const achievements = [
+  const allAchievements = [
     {
       title: 'BIT Internal Hackathon 2023',
       description: '1st Place (Rs.15,000) – Open Innovation',
@@ -55,6 +60,13 @@ LLM BASED RESOURCE ALLOCATION FOR BEYOND 5G WIRELESS COMMUNICATION`,
     },
   ];
 
+  const achievements = allAchievements.filter(a =>
+    !['Coordinator', 'President'].includes(a.title)
+  );
+  const leadership = allAchievements.filter(a =>
+    ['Coordinator', 'President'].includes(a.title)
+  );
+
   const publications = [
     {
       title: 'Patent',
@@ -76,178 +88,11 @@ LLM BASED RESOURCE ALLOCATION FOR BEYOND 5G WIRELESS COMMUNICATION`,
 
   return (
     <div className="min-h-screen pt-16">
-      {/* Education Section */}
-      <section className="py-12 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
-            Education
-          </h2>
-          <div className="space-y-8">
-            {education.map((edu, index) => (
-              <div
-                key={index}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-200"
-              >
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  {edu.degree}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-1">
-                  {edu.institution}
-                </p>
-                <p className="text-gray-500 dark:text-gray-400 text-sm mb-2">
-                  {edu.period}
-                </p>
-                <p className="text-gray-700 dark:text-gray-200">{edu.details}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Skills Section */}
-      <section className="py-12 px-4 bg-gray-50 dark:bg-gray-900">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
-            Technical Skills
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                Languages
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.languages.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                Core Areas
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.coreAreas.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                Tools & Platforms
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.tools.map((tool) => (
-                  <span
-                    key={tool}
-                    className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm"
-                  >
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Achievements Section */}
-      <section className="py-12 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
-            Achievements & Leadership
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {achievements.map((achievement, index) => {
-              let badge = null;
-              let badgeColor = '';
-              if (achievement.title === 'BIT Internal Hackathon 2023') {
-                badge = 'Winner';
-                badgeColor = 'bg-blue-500 text-white';
-              } else if (achievement.title === 'E-Bike Challenge (EDBC) 2022') {
-                badge = '4th Place';
-                badgeColor = 'bg-green-500 text-white';
-              } else if (achievement.title === 'Coordinator' || achievement.title === 'President') {
-                badge = 'Leadership';
-                badgeColor = 'bg-indigo-500 text-white';
-              } else if (achievement.title === 'Velammal Institute of Technology, Chennai,') {
-                badge = 'Best Paper Award';
-                badgeColor = 'bg-yellow-400 text-yellow-900';
-              }
-              return (
-                <div key={index} className="flex flex-col">
-                  {badge && (
-                    <span className={`inline-block mb-2 self-start ${badgeColor} text-xs font-bold px-3 py-1 rounded-full shadow`}>
-                      {badge}
-                    </span>
-                  )}
-                  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-200">
-                    {achievement.image && (
-                      <img
-                        src={achievement.image}
-                        alt={achievement.title}
-                        className="w-full h-48 object-cover rounded-lg mb-4 shadow-md border-2 border-blue-400 dark:border-blue-600"
-                      />
-                    )}
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                      {achievement.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300 whitespace-pre-line">
-                      {achievement.description}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Publications Section */}
-      <section className="py-12 px-4 bg-gray-50 dark:bg-gray-900">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
-            Publications & Research
-          </h2>
-          <div className="space-y-6">
-            {publications.map((pub, index) => (
-              <div
-                key={index}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-200"
-              >
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                  {pub.title}
-                </h3>
-                {pub.items ? (
-                  <ul className="list-disc list-inside space-y-2">
-                    {pub.items.map((item, i) => (
-                      <li
-                        key={i}
-                        className="text-gray-600 dark:text-gray-300"
-                      >
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="text-gray-600 dark:text-gray-300">
-                    {pub.description}
-                  </p>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <EducationSection education={education} />
+      <SkillsSection skills={skills} />
+      <AchievementsSection achievements={achievements} />
+      <LeadershipSection leadership={leadership} />
+      <PublicationsSection publications={publications} />
     </div>
   );
 };
