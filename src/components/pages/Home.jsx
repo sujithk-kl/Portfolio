@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import pradeepImg from '../../assets/pradeep.jpg';
+import pradeepImg from '../../assets/pradeep.jpeg';
 
 const Home = () => {
   const quickLinks = [

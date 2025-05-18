@@ -32,8 +32,8 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      title: 'Email',
-      value: 'pradeepkumar.ad21@bitsathy.ac.in',
+      title: 'Official Email',
+      value: 'personalpk360@gmail.com',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -42,7 +42,7 @@ const Contact = () => {
     },
     {
       title: 'Alternate Email',
-      value: 'spk282003@gmail.com',
+      value: 'www.spk282003@gmail.com',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -72,24 +72,24 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen pt-16">
-      <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col items-center justify-center">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
           Get in Touch
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="w-full max-w-xl">
           {/* Contact Information */}
           <div className="space-y-6">
-            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
               Contact Information
             </h2>
             <div className="space-y-4">
               {contactInfo.map((info, index) => (
                 <div
                   key={index}
-                  className="flex items-start space-x-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md"
+                  className="flex flex-row items-center bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md gap-4"
                 >
-                  <div className="text-blue-600 dark:text-blue-400">
+                  <div className="text-blue-600 dark:text-blue-400 flex-shrink-0">
                     {info.icon}
                   </div>
                   <div>
@@ -123,11 +123,11 @@ const Contact = () => {
             </div>
 
             {/* Social Links */}
-            <div className="mt-8">
+            <div className="mt-8 text-center">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                 Connect with me
               </h3>
-              <div className="flex space-x-4">
+              <div className="flex justify-center space-x-4">
                 <a
                   href="https://github.com/22pk/"
                   target="_blank"

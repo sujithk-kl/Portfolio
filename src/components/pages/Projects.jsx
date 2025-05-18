@@ -1,4 +1,5 @@
 import securityAutomationImg from '../../assets/security-automation.jpeg';
+import llmBasedImg from '../../assets/llm-based-project.jpeg';
 import myCookbookImg from '../../assets/my-cookbook.png.jpeg';
 
 const Projects = () => {
@@ -16,6 +17,20 @@ const Projects = () => {
       ],
       category: 'AI/ML',
       image: securityAutomationImg,
+    },
+    {
+      title: 'LLM-Based Resource Allocation for Beyond 5G Wireless Communication',
+      period: 'Jan - April 2025',
+      description: 'LLM-based B5G/6G Resource Allocator. Optimize resource allocation for Beyond 5G and 6G networks with AI-driven insights.',
+      technologies: ['LLM', 'Prompt Tuning', 'SQLite3', 'Streamlit'],
+      features: [
+        'Dashboard representation',
+        'Fast allocation',
+        'User specifications',
+        'AI optimization',
+      ],
+      category: 'AI/ML',
+      image: llmBasedImg,
     },
     {
       title: 'Personal Recipe Application',
