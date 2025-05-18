@@ -1,4 +1,5 @@
 import bitHackWinImg from '../../assets/bit-hack-win.jpeg';
+import bestPaperImg from '../../assets/best-paper.png';
 import EducationSection from '../about/EducationSection';
 import SkillsSection from '../about/SkillsSection';
 import AchievementsSection from '../about/AchievementsSection';
@@ -11,7 +12,7 @@ const About = () => {
       degree: 'B.Tech in Artificial Intelligence and Data Science',
       institution: 'Bannari Amman Institute of Technology',
       period: '2021–2025',
-      details: 'CGPA: 8.33 (up to 4th semester)',
+      details: 'CGPA: 8.43 (up to 7th semester)',
     },
     {
       degree: '12th Grade',
@@ -40,6 +41,14 @@ const About = () => {
       image: bitHackWinImg,
     },
     {
+      title: 'Velammal Institute of Technology, Chennai,',
+      description: `5th International Conference on Artificial Intelligence, 6G Communications and Network Technologies (ICA6NT 2025)
+
+Best Paper Award for the paper:
+LLM BASED RESOURCE ALLOCATION FOR BEYOND 5G WIRELESS COMMUNICATION`,
+      image: bestPaperImg,
+    },
+    {
       title: 'E-Bike Challenge (EDBC) 2022',
       description: '4th Place',
     },
@@ -50,13 +59,6 @@ const About = () => {
     {
       title: 'President',
       description: 'IAENG Technical Society (2023–2024)',
-    },
-    {
-      title: 'Velammal Institute of Technology, Chennai,',
-      description: `5th International Conference on Artificial Intelligence, 6G Communications and Network Technologies (ICA6NT 2025)
-
-Best Paper Award for the paper:
-LLM BASED RESOURCE ALLOCATION FOR BEYOND 5G WIRELESS COMMUNICATION`,
     },
   ];
 
