@@ -33,7 +33,7 @@ const Contact = () => {
   const contactInfo = [
     {
       title: 'Official Email',
-      value: 'personalpk360@gmail.com',
+      value: 'sujithkumaravel01@gmail.com',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -42,7 +42,7 @@ const Contact = () => {
     },
     {
       title: 'Alternate Email',
-      value: 'www.spk282003@gmail.com',
+      value: 'cyhawkzy@gmail.com',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -51,7 +51,7 @@ const Contact = () => {
     },
     {
       title: 'Phone',
-      value: '+91 8124438168',
+      value: '+91 8148155350',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -60,7 +60,7 @@ const Contact = () => {
     },
     {
       title: 'Address',
-      value: '1/62b, Raja street, Ambalur, Tirupattur - 635801',
+      value: '10/49, S.Thottipalayam, p.velur, Namakkal- 637213',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -69,14 +69,13 @@ const Contact = () => {
       ),
     },
   ];
-
+  
   return (
     <div className="min-h-screen pt-16">
       <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col items-center justify-center">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
           Get in Touch
         </h1>
-
         <div className="w-full max-w-xl">
           {/* Contact Information */}
           <div className="space-y-6">
@@ -129,7 +128,7 @@ const Contact = () => {
               </h3>
               <div className="flex justify-center space-x-4">
                 <a
-                  href="https://github.com/22pk/"
+                  href="https://github.com/sujithk-kl"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
@@ -139,7 +138,7 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://linkedin.com/in/pradeep-kumar-a2a921262"
+                  href="https://linkedin.com/in/sujith-kl"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"

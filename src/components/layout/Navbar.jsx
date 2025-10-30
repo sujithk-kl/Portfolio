@@ -17,7 +17,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Pradeep Kumar S</h1>
+              <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Sujith K</h1>
             </Link>
           </div>
 

@@ -1,60 +1,61 @@
 import securityAutomationImg from '../../assets/security-automation.jpeg';
-import llmBasedImg from '../../assets/llm-based-project.jpeg';
-import myCookbookImg from '../../assets/my-cookbook.png.jpeg';
+import freshfleetImg from '../../assets/Freshfleet.png';
+import codexaImg from '../../assets/Codexa.png';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Customizable Security System',
-      period: 'Aug 2023 – Oct 2023',
-      description: 'AI-based object/human/animal/fire detection and alert system',
-      technologies: ['Python', 'YOLOv8', 'Custom-trained datasets'],
+      title: 'FreshFleet – Online Grocery Shop',
+      period: 'Jan - May 2024',
+      description: 'Developed an online grocery shopping platform using the MERN stack featuring user authentication, real-time delivery tracking, and secure payments. Enabled vendor and customer management, personalized product recommendations, and direct-farm purchases delivering a smooth, modern shopping experience.',
+      technologies: ['MongoDB', 'React', 'Express.js', 'Node.js'],
       features: [
-        'Real-time object detection',
-        'Customizable alerting system',
-        'Multiple detection categories',
-        'High accuracy model',
+        'User & vendor management',
+        'Real-time delivery tracking',
+        'Secure online payments',
+        'Personalized recommendations',
       ],
-      category: 'AI/ML',
+      category: 'Full Stack',
+      image: freshfleetImg,
+    },
+    {
+      title: 'RealTime SOC Dashboard',
+      period: 'Mar 2025 – Oct 2025',
+      description: 'Developed a real-time SOC Dashboard for monitoring Windows Security logs, Defender, and SmartScreen events with instant detection of logon attempts, malware activity, and suspicious processes. Integrated alert management, RBAC, ACL control, and threat visualization using secure, encrypted data handling.',
+      technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'JWT'],
+      features: [
+        'Real-time threat detection and alerts',
+        'RBAC and ACL-based access control',
+        'Threat intelligence visualization',
+        'Encrypted data transmission',
+        'Dashboard for Defender & SmartScreen and Security logs',
+      ],
+      category: 'Cybersecurity',
       image: securityAutomationImg,
     },
     {
-      title: 'LLM-Based Resource Allocation for Beyond 5G Wireless Communication',
-      period: 'Jan - April 2025',
-      description: 'LLM-based B5G/6G Resource Allocator. Optimize resource allocation for Beyond 5G and 6G networks with AI-driven insights.',
-      technologies: ['LLM', 'Prompt Tuning', 'SQLite3', 'Streamlit'],
+      title: 'Codexa - Next-Gen Secure Cloud-Native Coding Platform',
+      period: 'Sep – Oct 2025',
+      description: 'Developed a browser-based IDE for fullstack application development entirely in the cloud, supporting real-time code editing, building, and execution without local setup. Integrated Zen Mode, Pomodoro timers, and smart project management tools to enhance developer focus and productivity.',
+      technologies: ['React','Node.js', 'Express.js', 'MongoDB', 'Docker',' Kubernetes', 'AWS S3', 'Socket.IO', 'Monaco Editor'],
       features: [
-        'Dashboard representation',
-        'Fast allocation',
-        'User specifications',
-        'AI optimization',
+        'Cloud-native execution with live terminal access',
+        'Zero-setup development environments',
+        'Zen Mode & Pomodoro productivity tools',
+        'Real-time collaboration and project management',
+        'Secure cloud storage and sandboxed execution',
       ],
-      category: 'AI/ML',
-      image: llmBasedImg,
-    },
-    {
-      title: 'Personal Recipe Application',
-      period: 'Feb 2023 – Mar 2023',
-      description: 'Android application for managing personal recipes',
-      technologies: ['Java', 'Android Studio', 'SQLite'],
-      features: [
-        'Custom recipe input',
-        'Recipe archive and retrieval',
-        'User-friendly interface',
-        'Offline storage',
-      ],
-      category: 'Mobile Development',
-      image: myCookbookImg,
+      category: 'Fullstack',
+      image: codexaImg,
     },
   ];
-
   const internships = [
     {
-      company: 'Ether Infotech',
+      company: 'Digisuraksha Parhari Foundation',
       role: 'Student Intern',
-      period: 'Apr 2023',
-      description: 'Built and deployed supervised ML models using Google Colab',
-      technologies: ['Machine Learning', 'Google Colab', 'Python'],
+      period: 'Apr 2025',
+      description: 'A practical cybersecurity internship focused on ethical hacking, network analysis, and hands-on training using real-world tools and platforms.',
+      technologies: ['Linux',' Burp Suite', 'Wireshark', 'TryHackMe', 'GitHub'],
     },
   ];
 

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import pradeepImg from '../../assets/pradeep.jpeg';
+import sujithImg from '../../assets/Sujithk.png';
 
 const Home = () => {
   const quickLinks = [
@@ -40,25 +40,29 @@ const Home = () => {
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="relative mx-auto mb-6 w-56 h-56 md:w-72 md:h-72 flex items-center justify-center">
-            <div className="absolute inset-0 rounded-[2rem] p-[3px] bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 z-0"></div>
-            <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300 group">
+          <div className="relative mx-auto mb-6 w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 flex items-center justify-center">
+            <div className="absolute inset-0 rounded-full p-1 bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 z-0"></div>
+            <div className="relative w-full h-full rounded-full overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300 group">
               <img
-                src={pradeepImg}
-                alt="Pradeep Kumar S"
-                className="w-full h-full object-cover rounded-[2rem] group-hover:brightness-105 transition-all duration-300"
+                src={sujithImg}
+                alt="Sujith K"
+                className="w-full h-full object-cover group-hover:brightness-105 transition-all duration-300"
+                style={{
+                  objectPosition: 'top',
+                  transform: 'scale(1.1)'
+                }}
               />
             </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            Hi, I'm Pradeep Kumar S
+            Hi, I'm SUJITH K
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-            AI & Data Science Student | Machine Learning Enthusiast
+            Computer Technology Student | Cybersecurity Enthusiast & Frontend Developer
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://drive.google.com/file/d/14m-hTQ7DpB2d8GpCdOr9Dp22-iY0elLQ/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1Tv3cdgbBecqjEMoo-SJ4-FYJblKlLpkk/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
@@ -110,7 +114,7 @@ const Home = () => {
             Technical Skills
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {['AI/ML', 'Data Science', 'Web Development', 'Mobile Development'].map((skill) => (
+            {['Cybersecurity', 'Computer Networks', 'Security Protocols', 'Web Development'].map((skill) => (
               <div
                 key={skill}
                 className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow text-center hover:shadow-lg transition-shadow duration-200"

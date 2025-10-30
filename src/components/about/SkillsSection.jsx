@@ -20,21 +20,23 @@ const SkillsSection = ({ skills }) => (
             ))}
           </div>
         </div>
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-            Core Areas
-          </h3>
-          <div className="flex flex-wrap gap-2">
-            {skills.coreAreas.map((skill) => (
-              <span
-                key={skill}
-                className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm"
-              >
-                {skill}
-              </span>
-            ))}
+        {skills.coreAreas && (
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              Core Areas
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {skills.coreAreas.map((skill) => (
+                <span
+                  key={skill}
+                  className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
             Tools & Platforms

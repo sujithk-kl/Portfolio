@@ -1,91 +1,46 @@
-import bitHackWinImg from '../../assets/bit-hack-win.jpeg';
-import bestPaperImg from '../../assets/best-paper.png';
+import internshipimg from '../../assets/Internship.png';
 import EducationSection from '../about/EducationSection';
 import SkillsSection from '../about/SkillsSection';
 import AchievementsSection from '../about/AchievementsSection';
-import LeadershipSection from '../about/LeadershipSection';
-import PublicationsSection from '../about/PublicationsSection';
+import CertificationsSection from '../about/CertificationsSection';
 
 const About = () => {
   const education = [
     {
-      degree: 'B.Tech in Artificial Intelligence and Data Science',
+      degree: 'B.Tech in Computer Technology',
       institution: 'Bannari Amman Institute of Technology',
-      period: '2021–2025',
-      details: 'CGPA: 8.43 (up to 7th semester)',
+      period: '2022–2026',
+      details: 'CGPA: 7.22 (up to 6th semester)',
     },
     {
       degree: '12th Grade',
-      institution: 'Vailankanni Matric Hr. Sec School',
-      period: '2020–2021',
-      details: 'Scored 95% in Biology-Math group',
+      institution: 'Malar Matric Higher Secondary School',
+      period: '2021–2022',
+      details: 'Scored 81.8% in Computer-Science group',
     },
     {
       degree: '10th Grade',
-      institution: 'Vailankanni Matric Hr. Sec School',
-      period: '2018–2019',
-      details: 'Scored 96%',
+      institution: 'Sun Stars Hr. Sec School',
+      period: '2019–2020',
+      details: 'Scored 82.6%',
     },
   ];
 
   const skills = {
-    languages: ['C', 'Java (OOPs)', 'Python', 'HTML', 'CSS'],
-    coreAreas: ['AI', 'ML', 'Data Visualization', 'DB Admin', 'Mobile/Web Dev'],
-    tools: ['Android Studio', 'MySQL', 'Power BI', 'Colab', 'Windows', 'Ubuntu'],
+    languages: ['C','Python', 'HTML', 'CSS'],
+    tools: ['Figma','Wireshark', 'Burpsuite', 'Metasploit','Nmap','Netcat','SIEM', 'Windows', 'Kali-linux'],
   };
 
-  const allAchievements = [
+  const achievements = [
     {
-      title: 'BIT Internal Hackathon 2023',
-      description: '1st Place (Rs.15,000) – Open Innovation',
-      image: bitHackWinImg,
-    },
-    {
-      title: 'Velammal Institute of Technology, Chennai,',
-      description: `5th International Conference on Artificial Intelligence, 6G Communications and Network Technologies (ICA6NT 2025)
+      title: 'Cybersecurity & Ethical Hacking Intern',
+      description: `Digisuraksha Parhari Foundation (Powered by Infinisec Technologies Pvt. Ltd.) – April 2025
 
-Best Paper Award for the paper:
-LLM BASED RESOURCE ALLOCATION FOR BEYOND 5G WIRELESS COMMUNICATION`,
-      image: bestPaperImg,
-    },
-    {
-      title: 'E-Bike Challenge (EDBC) 2022',
-      description: '4th Place',
-    },
-    {
-      title: 'Coordinator',
-      description: 'INSIGHT-X Tech Symposium 2023',
-    },
-    {
-      title: 'President',
-      description: 'IAENG Technical Society (2023–2024)',
-    },
-  ];
-
-  const achievements = allAchievements.filter(a =>
-    !['Coordinator', 'President'].includes(a.title)
-  );
-  const leadership = allAchievements.filter(a =>
-    ['Coordinator', 'President'].includes(a.title)
-  );
-
-  const publications = [
-    {
-      title: 'Patent',
-      description: 'IoT-based Automated Smart Irrigation (Jul 2022)',
-    },
-    {
-      title: 'Product',
-      description: 'Wildlife Security System (Filed Nov 2023)',
-    },
-    {
-      title: 'Papers Presented',
-      items: [
-        'Human-AI Interaction, MIT, SAMHITA-22',
-        'IoT-based Soil & Weather Report, IIRM – Aug 2022',
-        'Edge Computing and Applications, SIMATS – Oct 2023',
-      ],
-    },
+• Completed hands-on labs on TryHackMe, documenting tools, commands, and reasoning.
+• Practiced ethical hacking using Linux CLI, Burp Suite, and Wireshark.
+• Collaborated on GitHub-based cybersecurity projects and participated in a live final demo.`,
+      image: internshipimg, // You might want to replace this with an actual internship image
+    }
   ];
 
   return (
@@ -93,8 +48,7 @@ LLM BASED RESOURCE ALLOCATION FOR BEYOND 5G WIRELESS COMMUNICATION`,
       <EducationSection education={education} />
       <SkillsSection skills={skills} />
       <AchievementsSection achievements={achievements} />
-      <LeadershipSection leadership={leadership} />
-      <PublicationsSection publications={publications} />
+      <CertificationsSection />
     </div>
   );
 };
