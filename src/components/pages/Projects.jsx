@@ -94,16 +94,17 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200"
+                className="group relative bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
               >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                 {project.image && (
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-56 object-cover object-center"
+                    className="w-full h-56 object-cover object-center group-hover:scale-105 transition-transform duration-300"
                   />
                 )}
-                <div className="p-6">
+                <div className="relative p-6 z-10">
                   <div className="flex justify-between items-center mb-4">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       {project.title}
@@ -154,7 +155,7 @@ const Projects = () => {
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm"
+                          className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors duration-200"
                         >
                           {tech}
                         </span>
