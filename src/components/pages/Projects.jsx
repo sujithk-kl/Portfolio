@@ -6,7 +6,7 @@ import rbacImg from '../../assets/rbac.jpeg';
 const Projects = () => {
   const projects = [
     {
-      title: 'FreshFleett – Online Grocery Shop',
+      title: 'FreshFleet – Online Grocery Shop',
       period: 'Jan 2024 - May 2024',
       description: 'Developed an online grocery shopping platform using the MERN stack featuring user authentication, real-time delivery tracking, and secure payments. Enabled vendor and customer management, personalized product recommendations, and direct-farm purchases delivering a smooth, modern shopping experience.',
       technologies: ['MongoDB', 'React', 'Express.js', 'Node.js'],
