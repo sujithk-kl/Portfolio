@@ -1,4 +1,4 @@
-import securityAutomationImg from '../../assets/security-automation.jpeg';
+import socImg from '../../assets/soc.jpeg';
 import freshfleetImg from '../../assets/Freshfleet.png';
 import codexaImg from '../../assets/Codexa.png';
 
@@ -31,7 +31,7 @@ const Projects = () => {
         'Dashboard for Defender & SmartScreen and Security logs',
       ],
       category: 'Cybersecurity',
-      image: securityAutomationImg,
+      image: socImg,
     },
     {
       title: 'Codexa - Next-Gen Secure Cloud-Native Coding Platform',
@@ -52,9 +52,9 @@ const Projects = () => {
   const internships = [
     {
       company: 'Digisuraksha Parhari Foundation',
-      role: 'Student Intern',
+      role: 'Intern',
       period: 'Apr 2025',
-      description: 'A practical cybersecurity internship focused on ethical hacking, network analysis, and hands-on training using real-world tools and platforms.',
+      description: 'A practical cybersecurity Online internship focused on ethical hacking, network analysis, and hands-on training using real-world tools and platforms.',
       technologies: ['Linux',' Burp Suite', 'Wireshark', 'TryHackMe', 'GitHub'],
     },
   ];
