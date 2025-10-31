@@ -2,7 +2,7 @@ import socImg from '../../assets/soc.jpeg';
 import freshfleetImg from '../../assets/Freshfleet.png';
 import codexaImg from '../../assets/Codexa.png';
 import rbacImg from '../../assets/rbac.jpeg';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
   const projects = [
@@ -10,6 +10,7 @@ const Projects = () => {
       title: 'FreshFleet – Online Grocery Shop',
       period: 'Jan 2024 - May 2024',
       githubUrl: 'https://github.com/sujithk-kl/freshFleet',
+      demoUrl: 'https://freshfleet.vercel.app/',
       description: 'Developed an online grocery shopping platform using the MERN stack featuring user authentication, real-time delivery tracking, and secure payments. Enabled vendor and customer management, personalized product recommendations, and direct-farm purchases delivering a smooth, modern shopping experience.',
       technologies: ['MongoDB', 'React', 'Express.js', 'Node.js'],
       features: [
@@ -25,6 +26,7 @@ const Projects = () => {
       title: 'RealTime SOC Dashboard',
       period: 'Mar 2025 – Oct 2025',
       githubUrl: 'https://github.com/sujithk-kl/Soc-Dashboard',
+      demoUrl: 'https://soc.sujithk.me/',
       description: 'Developed a real-time SOC Dashboard for monitoring Windows Security logs, Defender, and SmartScreen events with instant detection of logon attempts, malware activity, and suspicious processes. Integrated alert management, RBAC, ACL control, and threat visualization using secure, encrypted data handling.',
       technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'JWT'],
       features: [
@@ -41,6 +43,7 @@ const Projects = () => {
       title: 'RBAC – Role-Based Access Control System',
       period: 'Jan 2025 – Mar 2025',
       githubUrl: 'https://github.com/sujithk-kl/RBAC',
+      demoUrl: 'https://zeroshield.vercel.app/',
       description: 'Developed a secure access control system to manage user permissions based on roles, ensuring only authorized users access critical data. Implemented AES-256 encryption, JWT authentication, and ACL-based permission management for enhanced data protection.',
       technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'AES-256', 'ACL', 'JWT',],
       features: [
@@ -105,22 +108,36 @@ const Projects = () => {
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       {project.title}
                     </h3>
-                    <div className="flex items-center space-x-2">
+                    <div className="flex items-center space-x-3">
                       <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full dark:bg-blue-900 dark:text-blue-200">
                         {project.category}
                       </span>
-                      {project.githubUrl && (
-                        <a 
-                          href={project.githubUrl} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors flex-shrink-0"
-                          aria-label="View on GitHub"
-                          title="View on GitHub"
-                        >
-                          <FaGithub size={20} />
-                        </a>
-                      )}
+                      <div className="flex items-center space-x-2">
+                        {project.demoUrl && (
+                          <a 
+                            href={project.demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center text-xs font-medium text-white bg-green-600 hover:bg-green-700 px-2 py-1 rounded transition-colors"
+                            title="Live Demo"
+                          >
+                            <FaExternalLinkAlt className="mr-1" size={12} />
+                            Demo
+                          </a>
+                        )}
+                        {project.githubUrl && (
+                          <a 
+                            href={project.githubUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors flex-shrink-0"
+                            aria-label="View on GitHub"
+                            title="View on GitHub"
+                          >
+                            <FaGithub size={20} />
+                          </a>
+                        )}
+                      </div>
                     </div>
                   </div>
                   <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
