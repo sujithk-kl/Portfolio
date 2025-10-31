@@ -1,3 +1,6 @@
+import React from 'react';
+import tryhackmeIcon from '../../assets/svg.svg';
+
 const Footer = () => {
   const socialLinks = [
     {
@@ -23,7 +26,7 @@ const Footer = () => {
       url: 'https://tryhackme.com/p/sujithkl',
       icon: (
         <img 
-          src="/src/assets/svg.svg" 
+          src={tryhackmeIcon}
           alt="TryHackMe" 
           className="w-6 h-6"
         />
