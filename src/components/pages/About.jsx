@@ -1,8 +1,10 @@
-import internshipimg from '../../assets/Internship.png';
+import internshipImg from '../../assets/Internship.png';
+import tryhackmeImg from '../../assets/tryhackme.png';
 import EducationSection from '../about/EducationSection';
 import SkillsSection from '../about/SkillsSection';
 import AchievementsSection from '../about/AchievementsSection';
 import CertificationsSection from '../about/CertificationsSection';
+
 
 const About = () => {
   const education = [
@@ -39,7 +41,7 @@ const About = () => {
 • Completed hands-on labs on TryHackMe, documenting tools, commands, and reasoning.
 • Practiced ethical hacking using Linux CLI, Burp Suite, and Wireshark.
 • Collaborated on GitHub-based cybersecurity projects and participated in a live final demo.`,
-      image: internshipimg,
+      image: internshipImg,
     },
     {
       title: 'TryHackMe',
@@ -47,8 +49,8 @@ const About = () => {
 
 • Completed 49+ hands-on labs covering real-world cybersecurity and CTF challenges.
 • Earned badges like 30-Day Streak, Logging Legend, and cat linux.txt.
-• • Gained strong skills in Linux, HTTP protocols, and log analysis.`,
-      image: '/src/assets/svg.svg',
+• Gained strong skills in Linux, HTTP protocols, and log analysis.`,
+      image: tryhackmeImg,
     }
   ];
 
