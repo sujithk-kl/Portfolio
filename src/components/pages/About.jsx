@@ -27,7 +27,7 @@ const About = () => {
   ];
 
   const skills = {
-    languages: ['C','Python', 'HTML', 'CSS'],
+    languages: ['C','Python', 'HTML', 'CSS','JS','React'],
     tools: ['Figma','Wireshark', 'Burpsuite', 'Metasploit','Nmap','Netcat','SIEM', 'Windows', 'Kali-linux'],
   };
 
@@ -39,7 +39,16 @@ const About = () => {
 • Completed hands-on labs on TryHackMe, documenting tools, commands, and reasoning.
 • Practiced ethical hacking using Linux CLI, Burp Suite, and Wireshark.
 • Collaborated on GitHub-based cybersecurity projects and participated in a live final demo.`,
-      image: internshipimg, // You might want to replace this with an actual internship image
+      image: internshipimg,
+    },
+    {
+      title: 'TryHackMe',
+      description: `Actively learning on TryHackMe through hands-on cybersecurity labs and real-world CTF challenges.
+
+• Completed 49+ hands-on labs covering real-world cybersecurity and CTF challenges.
+• Earned badges like 30-Day Streak, Logging Legend, and cat linux.txt.
+• • Gained strong skills in Linux, HTTP protocols, and log analysis.`,
+      image: '/src/assets/svg.svg',
     }
   ];
 

@@ -18,6 +18,17 @@ const Footer = () => {
         </svg>
       ),
     },
+    {
+      name: 'TryHackMe',
+      url: 'https://tryhackme.com/p/sujithkl',
+      icon: (
+        <img 
+          src="/src/assets/svg.svg" 
+          alt="TryHackMe" 
+          className="w-6 h-6"
+        />
+      ),
+    },
   ];
 
   return (
