@@ -1,12 +1,13 @@
 import socImg from '../../assets/soc.jpeg';
 import freshfleetImg from '../../assets/Freshfleet.png';
 import codexaImg from '../../assets/Codexa.png';
+import rbacImg from '../../assets/rbac.jpeg';
 
 const Projects = () => {
   const projects = [
     {
       title: 'FreshFleet – Online Grocery Shop',
-      period: 'Jan - May 2024',
+      period: 'Jan 2024 - May 2024',
       description: 'Developed an online grocery shopping platform using the MERN stack featuring user authentication, real-time delivery tracking, and secure payments. Enabled vendor and customer management, personalized product recommendations, and direct-farm purchases delivering a smooth, modern shopping experience.',
       technologies: ['MongoDB', 'React', 'Express.js', 'Node.js'],
       features: [
@@ -34,8 +35,22 @@ const Projects = () => {
       image: socImg,
     },
     {
+      title: 'RBAC – Role-Based Access Control System',
+      period: 'Jan 2025 – Mar 2025',
+      description: 'Developed a secure access control system to manage user permissions based on roles, ensuring only authorized users access critical data. Implemented AES-256 encryption, JWT authentication, and ACL-based permission management for enhanced data protection.',
+      technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'AES-256', 'ACL', 'JWT',],
+      features: [
+        'Role-based user authentication and authorization',
+        'AES-256 data encryption for secure communication',
+        'DFine-grained access control using ACL',
+        'Real-time permission management dashboard',
+      ],
+      category: 'Cybersecurity',
+      image: rbacImg,
+    },
+    {
       title: 'Codexa - Next-Gen Secure Cloud-Native Coding Platform',
-      period: 'Sep – Oct 2025',
+      period: 'Sep 2025 – Oct 2025',
       description: 'Developed a browser-based IDE for fullstack application development entirely in the cloud, supporting real-time code editing, building, and execution without local setup. Integrated Zen Mode, Pomodoro timers, and smart project management tools to enhance developer focus and productivity.',
       technologies: ['React','Node.js', 'Express.js', 'MongoDB', 'Docker',' Kubernetes', 'AWS S3', 'Socket.IO', 'Monaco Editor'],
       features: [
@@ -53,7 +68,7 @@ const Projects = () => {
     {
       company: 'Digisuraksha Parhari Foundation',
       role: 'Intern',
-      period: 'Apr 2025',
+      period: 'Apr 2025 - May 2025',
       description: 'A practical cybersecurity Online internship focused on ethical hacking, network analysis, and hands-on training using real-world tools and platforms.',
       technologies: ['Linux',' Burp Suite', 'Wireshark', 'TryHackMe', 'GitHub'],
     },
