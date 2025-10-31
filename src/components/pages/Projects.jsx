@@ -2,12 +2,14 @@ import socImg from '../../assets/soc.jpeg';
 import freshfleetImg from '../../assets/Freshfleet.png';
 import codexaImg from '../../assets/Codexa.png';
 import rbacImg from '../../assets/rbac.jpeg';
+import { FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
   const projects = [
     {
       title: 'FreshFleet – Online Grocery Shop',
       period: 'Jan 2024 - May 2024',
+      githubUrl: 'https://github.com/sujithk-kl/freshFleet',
       description: 'Developed an online grocery shopping platform using the MERN stack featuring user authentication, real-time delivery tracking, and secure payments. Enabled vendor and customer management, personalized product recommendations, and direct-farm purchases delivering a smooth, modern shopping experience.',
       technologies: ['MongoDB', 'React', 'Express.js', 'Node.js'],
       features: [
@@ -22,6 +24,7 @@ const Projects = () => {
     {
       title: 'RealTime SOC Dashboard',
       period: 'Mar 2025 – Oct 2025',
+      githubUrl: 'https://github.com/sujithk-kl/Soc-Dashboard',
       description: 'Developed a real-time SOC Dashboard for monitoring Windows Security logs, Defender, and SmartScreen events with instant detection of logon attempts, malware activity, and suspicious processes. Integrated alert management, RBAC, ACL control, and threat visualization using secure, encrypted data handling.',
       technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'JWT'],
       features: [
@@ -37,6 +40,7 @@ const Projects = () => {
     {
       title: 'RBAC – Role-Based Access Control System',
       period: 'Jan 2025 – Mar 2025',
+      githubUrl: 'https://github.com/sujithk-kl/RBAC',
       description: 'Developed a secure access control system to manage user permissions based on roles, ensuring only authorized users access critical data. Implemented AES-256 encryption, JWT authentication, and ACL-based permission management for enhanced data protection.',
       technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'AES-256', 'ACL', 'JWT',],
       features: [
@@ -51,6 +55,7 @@ const Projects = () => {
     {
       title: 'Codexa - Next-Gen Secure Cloud-Native Coding Platform',
       period: 'Sep 2025 – Oct 2025',
+      githubUrl: 'https://github.com/sujithk-kl/Codexa',
       description: 'Developed a browser-based IDE for fullstack application development entirely in the cloud, supporting real-time code editing, building, and execution without local setup. Integrated Zen Mode, Pomodoro timers, and smart project management tools to enhance developer focus and productivity.',
       technologies: ['React','Node.js', 'Express.js', 'MongoDB', 'Docker',' Kubernetes', 'AWS S3', 'Socket.IO', 'Monaco Editor'],
       features: [
@@ -96,13 +101,27 @@ const Projects = () => {
                   />
                 )}
                 <div className="p-6">
-                  <div className="flex justify-between items-start mb-4">
+                  <div className="flex justify-between items-center mb-4">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       {project.title}
                     </h3>
-                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">
-                      {project.category}
-                    </span>
+                    <div className="flex items-center space-x-2">
+                      <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full dark:bg-blue-900 dark:text-blue-200">
+                        {project.category}
+                      </span>
+                      {project.githubUrl && (
+                        <a 
+                          href={project.githubUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors flex-shrink-0"
+                          aria-label="View on GitHub"
+                          title="View on GitHub"
+                        >
+                          <FaGithub size={20} />
+                        </a>
+                      )}
+                    </div>
                   </div>
                   <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
                     {project.period}
