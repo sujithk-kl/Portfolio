@@ -8,19 +8,19 @@ const CertificationsSection = () => {
       title: 'Fortinet Certified Professional (FCP)',
       description: 'Network Security Expert',
       image: FCP,
-      date: '2024',
+      date: '2025',
     },
     {
       title: 'Fortinet Certified Fundamentals (FCF)',
       description: 'Cybersecurity',
       image: FCF,
-      date: '2024',
+      date: '2025',
     },
     {
       title: 'Fortinet Certified Associate (FCA)',
       description: 'Network Security',
       image: FCA,
-      date: '2024',
+      date: '2025',
     },
   ];
 

@@ -11,23 +11,22 @@ const About = () => {
     {
       degree: 'B.Tech in Computer Technology',
       institution: 'Bannari Amman Institute of Technology',
-      period: '2022–2026',
+      period: '2022 – 2026',
       details: 'CGPA: 7.22 (up to 6th semester)',
     },
     {
       degree: '12th Grade',
       institution: 'Malar Matric Higher Secondary School',
-      period: '2021–2022',
+      period: '2021 – 2022',
       details: 'Scored 81.8% in Computer-Science group',
     },
     {
       degree: '10th Grade',
       institution: 'Sun Stars Hr. Sec School',
-      period: '2019–2020',
+      period: '2019 – 2020',
       details: 'Scored 82.6%',
     },
   ];
-
   const skills = {
     languages: ['C','Python', 'HTML', 'CSS','JS','React'],
     tools: ['Figma','Wireshark', 'Burpsuite', 'Metasploit','Nmap','Netcat','SIEM', 'Windows', 'Kali-linux'],
