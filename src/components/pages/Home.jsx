@@ -62,7 +62,7 @@ const Home = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://drive.google.com/file/d/1Tv3cdgbBecqjEMoo-SJ4-FYJblKlLpkk/view?usp=sharing"
+              href="https://drive.google.com/file/d/1DjDaFlxa5M0mN8YfPYqHrr0Y4ovafYOa/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
